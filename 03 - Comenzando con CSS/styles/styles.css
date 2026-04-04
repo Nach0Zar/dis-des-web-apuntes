@@ -1,0 +1,84 @@
+#title {
+    color: #00B050;
+    font-family: 'Georgia', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 5.3rem auto 0;
+    text-decoration-thickness: 2px;
+}
+
+body {
+    margin: 0 4.75rem;
+}
+
+.generic-text {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    margin: 0.5rem 0;
+}
+
+#subtitle {
+    color: #FF0000;
+    font-family: 'Tahoma', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.category {
+    color: #0070C0;
+    font-family: 'Georgia', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin: 2rem 0 0;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.15rem;
+}
+
+.subcategory {
+    color: #E36C0A;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0.15rem 0 0;
+}
+
+#multimedia-design-text {
+    color: #92D050;
+}
+
+#multimedia-design-text strong {
+    color: #76923C;
+    font-weight: normal;
+}
+
+#web-design-text {
+    color: #D99594;
+}
+
+#web-design-text strong {
+    color: #943634;
+    font-weight: normal;
+}
+
+#short-courses-text {
+    color: #B2A1C7;
+}
+
+#short-courses-text strong {
+    color: #5F497A;
+    font-weight: normal;
+}
+
+#professional-training-text {
+    color: #FF33CC;
+}
+
+#professional-training-text strong {
+    color: #CC3399;
+    font-weight: normal;
+}
