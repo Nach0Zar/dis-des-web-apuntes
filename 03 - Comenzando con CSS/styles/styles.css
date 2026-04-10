@@ -20,13 +20,6 @@ body {
     margin: 0.5rem 0;
 }
 
-#subtitle {
-    color: #FF0000;
-    font-family: 'Tahoma', sans-serif;
-    font-style: normal;
-    font-size: 12px;
-}
-
 .category {
     color: #0070C0;
     font-family: 'Georgia', sans-serif;
@@ -45,6 +38,15 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin: 0.15rem 0 0;
+}
+
+#subtitle {
+    color: #FF0000;
+}
+
+#subtitle strong {
+    color: #A50021;
+    font-weight: normal;
 }
 
 #multimedia-design-text {
