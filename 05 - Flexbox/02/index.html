@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <title>Propiedades flexbox - Ignacio Zarlenga</title> 
+    </head>
+    <body>
+        <main class="profile-app">
+            <!-- Cabecera con logo + menú horizontal -->
+            <div id="header" class="header">
+                <div class="logo">🐧 RedSocial</div>
+                <div class="nav-links">
+                    <a href="#">Inicio</a>
+                    <a href="#">Explorar</a>
+                    <a href="#">Notificaciones</a>
+                    <a href="#">Configuración</a>
+                </div>
+            </div>
+
+            <!-- Layout principal: sidebar + contenido de perfil -->
+            <div class="main-layout" id="main-layout">
+                <!-- Sidebar (menú vertical) -->
+                <div class="sidebar">
+                    <a href="#" class="menu-item">📊 Mi perfil</a>
+                    <a href="#" class="menu-item">📸 Publicaciones</a>
+                    <a href="#" class="menu-item">❤️ Me gusta</a>
+                    <a href="#" class="menu-item">🔒 Privacidad</a>
+                    <a href="#" class="menu-item">🚪 Cerrar sesión</a>
+                </div>
+
+                <!-- Contenido principal del perfil -->
+                <div class="profile-main">
+                    <div class="profile-header">
+                        <img class="avatar" src="https://picsum.photos/id/64/200/200" alt="Avatar usuario">
+                        <div class="user-name">Laura Méndez</div>
+                        <div class="user-bio">Diseñadora UI y entusiasta del front-end | 📍 Santiago</div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat"><div class="stat-number">128</div>Publicaciones</div>
+                        <div class="stat"><div class="stat-number">3.4k</div>Seguidores</div>
+                        <div class="stat"><div class="stat-number">892</div>Siguiendo</div>
+                    </div>
+                    <div class="publicaciones">
+                        <h3>📌 Últimas publicaciones</h3>
+                        <div class="post">✨ Nuevo tutorial de Flexbox: dominando el espaciado. #CSS</div>
+                        <div class="post">🎨 Mi setup de diseño: minimalista y funcional.</div>
+                        <div class="post">📸 Amanecer desde la ventana – inspiración para paletas de color.</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div style="margin-top: 2rem; background: #e9ecef; padding: 1rem; border-radius: 8px; font-family: monospace; max-width: 1100px; margin-left: auto; margin-right: auto;">
+            <strong>📌 ENUNCIADO EJERCICIO 2:</strong><br>
+            - Aplica <strong>Flexbox</strong> para lograr la siguiente estructura:<br>
+            1. La cabecera (<code>.header</code>) debe ser un contenedor flex horizontal que alinee el logo a la izquierda y los enlaces a la derecha.<br>
+            2. El contenedor <code>.main-layout</code> debe ser un flex container en <strong>fila</strong> (dos columnas).<br>
+            3. La barra lateral (<code>.sidebar</code>) debe tener un ancho fijo de 240px (puedes usar <code>flex-basis</code> o <code>width</code>).<br>
+            4. El área de perfil (<code>.profile-main</code>) debe ocupar <strong>todo el espacio restante</strong> (<code>flex-grow</code>).<br>
+            5. La cabecera y el contenido deben apilarse verticalmente (esto ya es natural, pero asegúrate de que el contenedor principal <code>.profile-app</code> no tenga flex en columna a menos que lo necesites; el reto es el layout de dos columnas y la cabecera).
+        </div>
+    </body>
+</html>

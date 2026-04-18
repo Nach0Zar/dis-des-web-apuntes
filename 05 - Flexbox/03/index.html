@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <title>Propiedades flexbox - Ignacio Zarlenga</title> 
+    </head>
+    <body>
+        <div class="dashboard">
+            <div class="dash-header">
+                <h2>📊 Dashboard de Ventas</h2>
+                <p>Resumen de métricas clave - Marzo 2026</p>
+            </div>
+
+            <!-- Fila de 3 KPI -->
+            <div class="kpi-row" style="padding: 2rem 2rem 0 2rem;">
+                <div class="kpi-card">
+                    <div class="kpi-number">$124.500</div>
+                    <div class="kpi-label">Ingresos totales</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-number">+23%</div>
+                    <div class="kpi-label">Crecimiento mensual</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-number">1,283</div>
+                    <div class="kpi-label">Órdenes completadas</div>
+                </div>
+            </div>
+
+            <!-- Contenido central: gráfico simulado + lista actividades -->
+            <div class="dashboard-content" style="padding: 2rem;">
+                <div class="chart-placeholder">
+                    📈 [Gráfico de ventas] – Aquí iría un gráfico real. Superficie de ejemplo.
+                </div>
+                <div class="activities-list">
+                    <h3 style="margin-bottom: 1rem;">🕒 Actividades recientes</h3>
+                    <div class="activity-item">
+                        <span>🔔 Nuevo pedido #2341</span>
+                        <span>hace 10 min</span>
+                    </div>
+                    <div class="activity-item">
+                        <span>⭐ Usuario premium registrado</span>
+                        <span>hace 45 min</span>
+                    </div>
+                    <div class="activity-item">
+                        <span>📦 Envío completado a Santiago</span>
+                        <span>hace 2h</span>
+                    </div>
+                    <div class="activity-item">
+                        <span>🔄 Reembolso procesado</span>
+                        <span>hace 3h</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                Dashboard generado con datos simulados | Uso exclusivo educativo
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem; background: #e9ecef; padding: 1rem; border-radius: 8px; font-family: monospace; max-width: 1300px; margin-left: auto; margin-right: auto;">
+            <strong>📌 ENUNCIADO EJERCICIO 3 (Complejo):</strong><br>
+            - Sin modificar HTML, aplica <strong>Flexbox</strong> para lograr:<br>
+            1. <code>.kpi-row</code>: distribuir las 3 tarjetas KPI en fila, con espacio entre ellas, y que cada una ocupe el mismo ancho (usa <code>flex: 1</code> y gap).<br>
+            2. <code>.dashboard-content</code>: debe ser un contenedor flex que muestre en dos columnas: el gráfico (<code>.chart-placeholder</code>) a la izquierda y la lista de actividades (<code>.activities-list</code>) a la derecha. Usa <code>flex-grow</code> para que el gráfico ocupe 2/3 y las actividades 1/3 (o proporciones similares).<br>
+            3. El footer debe permanecer abajo, pero ya está en el flujo normal; sin embargo, asegúrate de que el dashboard ocupe toda la altura si es necesario (opcional: usar <code>flex-direction: column</code> en <code>.dashboard</code> para que footer quede al fondo).<br>
+            4. Aplica márgenes automáticos cuando sea necesario.
+        </div>
+    </body>
+</html>
