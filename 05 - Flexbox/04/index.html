@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <title>Propiedades flexbox - Ignacio Zarlenga</title> 
+    </head>
+    <body>
+        <div class="product-page">
+            <!-- FILA PRINCIPAL: miniaturas + imagen principal + panel info -->
+            <div class="product-top">
+                <!-- Miniaturas izquierda -->
+                <div class="thumbnails">
+                    <img class="thumb" src="https://picsum.photos/id/20/100/100" alt="miniatura 1">
+                    <img class="thumb" src="https://picsum.photos/id/26/100/100" alt="miniatura 2">
+                    <img class="thumb" src="https://picsum.photos/id/96/100/100" alt="miniatura 3">
+                </div>
+                <!-- Imagen principal -->
+                <div class="main-image">
+                    <img src="https://picsum.photos/id/20/500/400" alt="Producto principal">
+                </div>
+                <!-- Panel de información -->
+                <div class="info-panel">
+                    <div class="product-title">Auriculares WavePro X</div>
+                    <div class="price">$59.990</div>
+                    <p>Cancelación de ruido, batería 30h, diseño ergonómico. Ideal para gamers y profesionales.</p>
+                    <div class="sizes">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                    </div>
+                    <button class="btn-buy">🛒 Añadir al carrito</button>
+                </div>
+            </div>
+
+            <!-- Pestañas simuladas -->
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <div class="tab">Descripción</div>
+                    <div class="tab">Especificaciones</div>
+                    <div class="tab">Opiniones (24)</div>
+                </div>
+                <div class="tab-content">
+                    <p>✅ Sonido de alta fidelidad con drivers de 40mm. Compatible con Bluetooth 5.2. Incluye estuche de carga y cable USB-C. Materiales reciclados.</p>
+                </div>
+            </div>
+
+            <!-- Productos relacionados -->
+            <h3 class="related-title">🔥 Productos relacionados</h3>
+            <div class="related-grid">
+                <div class="related-item">
+                    <img class="related-img" src="https://picsum.photos/id/1/150/150" alt="Rel 1">
+                    <p>Teclado mecánico</p>
+                    <strong>$45.990</strong>
+                </div>
+                <div class="related-item">
+                    <img class="related-img" src="https://picsum.photos/id/0/150/150" alt="Rel 2">
+                    <p>Mouse RGB</p>
+                    <strong>$24.990</strong>
+                </div>
+                <div class="related-item">
+                    <img class="related-img" src="https://picsum.photos/id/42/150/150" alt="Rel 3">
+                    <p>Base refrigerante</p>
+                    <strong>$32.500</strong>
+                </div>
+                <div class="related-item">
+                    <img class="related-img" src="https://picsum.photos/id/82/150/150" alt="Rel 4">
+                    <p>Pad XXL</p>
+                    <strong>$12.990</strong>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem; background: #e9ecef; padding: 1rem; border-radius: 8px; font-family: monospace; max-width: 1300px; margin-left: auto; margin-right: auto;">
+            <strong>📌 ENUNCIADO EJERCICIO 4 (Muy complejo):</strong><br>
+            - Únicamente con Flexbox (sin Grid, sin position absoluta), resuelve:<br>
+            1. <code>.product-top</code>: tres columnas (miniaturas, imagen principal, panel info). Las miniaturas deben tener ancho fijo de 100px. La imagen principal debe ocupar el espacio flexible restante (ej. <code>flex: 2</code>). El panel de info debe tener <code>flex: 1.2</code> aprox.<br>
+            2. Dentro de la columna de miniaturas, usa <code>flex-direction: column</code> para apilarlas verticalmente.<br>
+            3. Los productos relacionados (<code>.related-grid</code>) deben mostrarse en fila horizontal con <code>flex-wrap: wrap</code>, espaciado uniforme y cada tarjeta con un ancho base de 200px (o flexible).<br>
+            4. Las pestañas no requieren flex adicional, pero la página completa debe verse como un layout profesional de e-commerce.<br>
+            5. Asegúrate de que no haya desbordes y usa <code>gap</code> donde sea necesario.
+        </div>
+    </body>
+</html>

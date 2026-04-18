@@ -91,10 +91,18 @@ body {
 .kpi-row {
     display: flex;
     justify-content: space-between;
+    gap: 4rem;
 }
 
 .kpi-row .kpi-card {
     flex-grow: 1;
     flex-basis: 0;
-    max-width: max-content;
+}
+
+.dashboard-content {
+    display: flex;
+}
+
+.chart-placeholder {
+    flex-grow: 2;
 }
