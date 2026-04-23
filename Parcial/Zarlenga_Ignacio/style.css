@@ -101,8 +101,41 @@
 
 .body {
     background-color: #1F1F2E;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
+/* Footer */
+
+.footer {
+    border: 1px solid #3A3A4F;
+    background-color: #3A3A4F;
+    position: relative;
+    z-index: 2;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 40px rgba(0,0,0,0.38);
+    z-index: -1;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.footer-list-item {
+    padding: 0.5rem 1rem;
+}
+/*** Index ***/
 /** Presentacion **/
 
 #presentation {
@@ -172,34 +205,4 @@
 
 .activity-title {
     font-size: 1.5rem;
-}
-
-/* Footer */
-
-.footer {
-    border: 1px solid #3A3A4F;
-    background-color: #3A3A4F;
-    position: relative;
-    z-index: 2;
-}
-
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 0 40px rgba(0,0,0,0.38);
-    z-index: -1;
-}
-
-.footer-list {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem 0;
-    list-style: none;
-}
-
-.footer-list-item {
-    padding: 0.5rem 1rem;
 }
