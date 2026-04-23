@@ -10,96 +10,106 @@
         <link rel="stylesheet" href="./style.css">
         <title>Parcial - Ignacio Zarlenga</title> 
     </head>
-    <body>
-        <header>
-            <h1>Ignacio Zarlenga</h1>
-            <h2>Portfolio - Software Engineer</h2>
+    <body class="body">
+        <header class="header">
+            <h1 class="title">Ignacio Zarlenga</h1>
+            <h2 class="subtitle">Portfolio - Software Engineer</h2>
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#presentation">Presentacion</a></li>
-                    <li><a href="#activity-1">Actividad 1</a></li>
-                    <li><a href="#activity-2">Actividad 2</a></li>
-                    <li><a href="#activity-3">Actividad 3</a></li>
-                    <li><a href="#activity-4">Actividad 4</a></li>
-                    <li><a href="#activity-5">Actividad 5</a></li>
-                    <li><a href="#footer">Datos personales</a></li>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#presentation">Presentacion</a></li>
+                    <li><a class="nav-link" href="#activity-1">Actividad 1</a></li>
+                    <li><a class="nav-link" href="#activity-2">Actividad 2</a></li>
+                    <li><a class="nav-link" href="#activity-3">Actividad 3</a></li>
+                    <li><a class="nav-link" href="#activity-4">Actividad 4</a></li>
+                    <li><a class="nav-link" href="#activity-5">Actividad 5</a></li>
+                    <li><a class="nav-link" href="#footer">Datos personales</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <article>
-                <header id="introduction">
-                    <h2>Introducción</h2>
-                    <p>En este portfolio se encuentran las actividades realizadas a lo largo de la primera parte de la cursada, cada una de ellas con su respectiva descripción y una imágen ilustrativa. Cada imágen permite navegar directamente al ejercicio correspondiente.</p>
+        <main class="main-container">
+            <article class="content-container">
+                <header class="box-container" id="introduction">
+                    <h2 class="subtitle">Introducción</h2>
+                    <p class="text">En este portfolio se encuentran las actividades realizadas a lo largo de la primera parte de la cursada, cada una de ellas con su respectiva descripción y una imágen ilustrativa. Cada imágen permite navegar directamente al ejercicio correspondiente.</p>
                 </header>
-                <section id="presentation">
-                    <div class="presentation-image">
-                        <img src="./imgs/profile.jpg" alt="Imagen de perfil">
+                <section class="box-container" id="presentation">
+                    <div id="presentation-image-container">
+                        <img id="presentation-image" src="./imgs/profile.jpeg" alt="Imagen de perfil">
                     </div>
-                    <div class="presentation-text-container">
-                        <h2>Acerca de mí</h2>
-                        <p>Me llamo Ignacio Zarlenga y soy un estudiante de Ingeniería Informática, actualmente cursando el último cuatrimestre de la carrera. Me idenfitico como un apasionado por el aprendizaje continuo.</p>
-                        <a href="./biografia.html">Saber más!</a>
-                    </div>
-                </section>
-                <section class="activity" id="activity-1">
-                    <figure class="activity-image">
-                        <img src="./imgs/activity-1.jpg" alt="Imagen referencia actividad 1">
-                        <figcaption>Primeros pasos en la creación de páginas web</figcaption>
-                    </figure>
-                    <div class="activity-text-container">
-                        <h3>Actividad 1</h3>
-                        <p>Este ejercicio se basó en la introduccion a HTML, donde vimos las primeras armas para armar la primera pagina web, formateo de texto, listas de elementos, inserción de imagenes y enlaces a páginas web externas.</p>
+                    <div id="presentation-text-container">
+                        <h2 class="subtitle">Acerca de mí</h2>
+                        <p class="text">Me llamo Ignacio Zarlenga y soy un estudiante de Ingeniería Informática, actualmente cursando el último cuatrimestre de la carrera. Me idenfitico como un apasionado por el aprendizaje continuo.</p>
+                        <a class="button" href="./biografia.html">Saber más!</a>
                     </div>
                 </section>
-                <section class="activity reverse" id="activity-2">
-                    <figure class="activity-image">
-                        <img src="./imgs/activity-2.png" alt="Imagen referencia actividad 2">
-                        <figcaption>Imagen ilustrativa de lo visto en estructura semántica de HTML</figcaption>
+                <section class="box-container activity" id="activity-1">
+                    <figure class="activity-image-container">
+                        <a href="./ejercicios/ejercicio01/index.html">
+                            <img class="activity-image" src="./imgs/activity-1.png" alt="Imagen referencia actividad 1">
+                        </a>
+                        <figcaption class="text">Primeros pasos en la creación de páginas web</figcaption>
                     </figure>
                     <div class="activity-text-container">
-                        <h3>Actividad 2</h3>
-                        <p>Este ejercicio se basó en la estructura semántica de HTML, donde vimos cómo organizar páginas web utilizando encabezados, navegación, secciones, articulos y piés de paginas entre otros.</p>
+                        <h3 class="subtitle activity-title">Actividad 1</h3>
+                        <p class="text">Este ejercicio se basó en la introduccion a HTML, donde vimos las primeras armas para armar la primera pagina web, formateo de texto, listas de elementos, inserción de imagenes y enlaces a páginas web externas.</p>
                     </div>
                 </section>
-                <section class="activity" id="activity-3">
-                    <figure class="activity-image">
-                        <img src="./imgs/activity-3.png" alt="Imagen referencia actividad 3">
-                        <figcaption>Imagen representando como se aplico CSS para formatear el documento mencionado</figcaption>
+                <section class="box-container activity reverse" id="activity-2">
+                    <figure class="activity-image-container">
+                        <a href="./ejercicios/ejercicio02/index.html">
+                            <img class="activity-image" src="./imgs/activity-2.png" alt="Imagen referencia actividad 2">
+                        </a>
+                        <figcaption class="text">Imagen ilustrativa de lo visto en estructura semántica de HTML</figcaption>
                     </figure>
                     <div class="activity-text-container">
-                        <h3>Actividad 3</h3>
-                        <p>Este ejercicio se basó en la introducción a CSS, donde tuvimos un ejercicio para simular el diseño de un archivo Word dentro de un navegador.</p>
+                        <h3 class="subtitle activity-title">Actividad 2</h3>
+                        <p class="text">Este ejercicio se basó en la estructura semántica de HTML, donde vimos cómo organizar páginas web utilizando encabezados, navegación, secciones, articulos y piés de paginas entre otros.</p>
                     </div>
                 </section>
-                <section class="activity reverse" id="activity-4">
-                    <figure class="activity-image">
-                        <img src="./imgs/activity-4.webp" alt="Imagen referencia actividad 4">
-                        <figcaption>Imagen referenciando las propiedades de cajas en CSS y la developer tool que ofrece Chrome para poder visualizar con mayor facilidad los valores de cada bloque</figcaption>
+                <section class="box-container activity" id="activity-3">
+                    <figure class="activity-image-container">
+                        <a href="./ejercicios/ejercicio03/index.html">
+                            <img class="activity-image" src="./imgs/activity-3.png" alt="Imagen referencia actividad 3">
+                        </a>
+                        <figcaption class="text">Imagen representando como se aplico CSS para formatear el documento mencionado</figcaption>
                     </figure>
                     <div class="activity-text-container">
-                        <h3>Actividad 4</h3>
-                        <p>Este ejercicio nos enseñó a utilizar las propiedades de cajas en css, reconstruyendo varias imagenes utilizando únicamente etiquetas HTML y propiedades de CSS. (Aclaración, en mi caso además había hecho uso de propiedades de FlexBox) </p>
+                        <h3 class="subtitle activity-title">Actividad 3</h3>
+                        <p class="text">Este ejercicio se basó en la introducción a CSS, donde tuvimos un ejercicio para simular el diseño de un archivo Word dentro de un navegador.</p>
                     </div>
                 </section>
-                <section class="activity" id="activity-5">
-                    <figure class="activity-image">
-                        <img src="./imgs/activity-5.png" alt="Imagen referencia actividad 5">
-                        <figcaption>La imagen hace referencia a las propiedades flex utilizadas para realizar los ejercicios practicos, guía sacada de <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks</a></figcaption>
+                <section class="box-container activity reverse" id="activity-4">
+                    <figure class="activity-image-container">
+                        <a href="./ejercicios/ejercicio04/index.html">
+                            <img class="activity-image" src="./imgs/activity-4.webp" alt="Imagen referencia actividad 4">
+                        </a>
+                        <figcaption class="text">Imagen referenciando las propiedades de cajas en CSS y la developer tool que ofrece Chrome para poder visualizar con mayor facilidad los valores de cada bloque</figcaption>
                     </figure>
                     <div class="activity-text-container">
-                        <h3>Actividad 5</h3>
-                        <p>Este ejercicio se basó en el uso de propiedades Flexbox para reparar diseños de páginas ya provistas que necesitaban reordenar el contenido</p>
+                        <h3 class="subtitle activity-title">Actividad 4</h3>
+                        <p class="text">Este ejercicio nos enseñó a utilizar las propiedades de cajas en css, reconstruyendo varias imagenes utilizando únicamente etiquetas HTML y propiedades de CSS. (Aclaración, en mi caso además había hecho uso de propiedades de FlexBox) </p>
+                    </div>
+                </section>
+                <section class="box-container activity" id="activity-5">
+                    <figure class="activity-image-container">
+                        <a href="./ejercicios/ejercicio05/index.html">
+                            <img class="activity-image" src="./imgs/activity-5.png" alt="Imagen referencia actividad 5">
+                        </a>
+                        <figcaption class="text">La imagen hace referencia a las propiedades flex utilizadas para realizar los ejercicios practicos, guía sacada de <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks</a></figcaption>
+                    </figure>
+                    <div class="activity-text-container">
+                        <h3 class="subtitle activity-title">Actividad 5</h3>
+                        <p class="text">Este ejercicio se basó en el uso de propiedades Flexbox para reparar diseños de páginas ya provistas que necesitaban reordenar el contenido</p>
                     </div>
                 </section>
             </article>
         </main>
         <footer class="footer" id="footer">
-            <ul>
-                <li>Legajo: 1132325</li>
-                <li>Carrera: Ingeniería Informática</li>
-                <li>Email: izarlenga@uade.edu.ar</li>
+            <ul class="footer-list">
+                <li class="text footer-list-item">Legajo: 1132325</li>
+                <li class="text footer-list-item">Carrera: Ingeniería Informática</li>
+                <li class="text footer-list-item">Email: izarlenga@uade.edu.ar</li>
             </ul>
         </footer>
     </body>
