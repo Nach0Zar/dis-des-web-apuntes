@@ -1,0 +1,11 @@
+Business: software engineer portfolio
+Keywords: retro, pragmatic, minimalist, dark neutral, futuristic, dark violet
+Main Font: Bebas Neue
+Body Font: Roboto
+Font Justification: Bebas Neue provides a strong, slightly vintage silhouette that evokes a retro tech feel while remaining bold and readable for headings. Paired with Roboto's clean, highly legible sans‑serif anatomy, the combination balances the nostalgic edge with pragmatic, modern body text suitable for code snippets and project descriptions.
+Primary Color: #1F1F2E
+Secondary Color: #3A3A4F
+Accent Color: #8B00FF
+Palette Justification: The deep charcoal primary and muted slate secondary create a dark neutral foundation that reinforces a minimalist, focused aesthetic and ensures excellent contrast for code‑centric content. The vibrant dark violet accent injects a futuristic, creative spark that differentiates the portfolio and highlights key interactive elements while staying harmonious with the overall dark scheme.
+Brand Tagline: Code with style, design with purpose
+Picture: https://www.pexels.com/photo/apple-macbook-with-additional-screen-on-desk-17204164/
