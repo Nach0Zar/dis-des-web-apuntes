@@ -213,6 +213,12 @@
 /*** Biografia ***/
 /** Layout **/
 
+.biography-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .biography-container {
     display: flex;
     flex-flow: row wrap;
