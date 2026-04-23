@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <title>Propiedades flexbox - Ignacio Zarlenga</title> 
+    </head>
+    <body>
+        <main class="container">
+            <h1>⚡ Productos destacados</h1>
+            <div class="subtitulo">Los más vendidos de la temporada</div>
+
+            <!-- Contenedor que el alumno debe maquetar con FLEXBOX -->
+            <div id="products-container">
+                <!-- Tarjeta 1 -->
+                <div class="product-card">
+                    <img class="product-img" src="https://picsum.photos/id/20/300/200" alt="Auriculares inalámbricos">
+                    <div class="product-info">
+                        <div class="product-title">Auriculares WavePro</div>
+                        <div class="product-price">$59.990</div>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="product-card">
+                    <img class="product-img" src="https://picsum.photos/id/26/300/200" alt="Teclado mecánico">
+                    <div class="product-info">
+                        <div class="product-title">Teclado Mecánico RGB</div>
+                        <div class="product-price">$89.990</div>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="product-card">
+                    <img class="product-img" src="https://picsum.photos/id/0/300/200" alt="Mouse ergonómico">
+                    <div class="product-info">
+                        <div class="product-title">Mouse Ergo Plus</div>
+                        <div class="product-price">$29.990</div>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="product-card">
+                    <img class="product-img" src="https://picsum.photos/id/96/300/200" alt="Monitor 24 pulgadas">
+                    <div class="product-info">
+                        <div class="product-title">Monitor LED 24"</div>
+                        <div class="product-price">$199.990</div>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ENUNCIADO DEL EJERCICIO (para el alumno) -->
+        <div style="margin-top: 2rem; background: #e9ecef; padding: 1rem; border-radius: 8px; font-family: monospace; max-width: 1200px; margin-left: auto; margin-right: auto;">
+            <strong>📌 ENUNCIADO EJERCICIO 1:</strong><br>
+            - Usando exclusivamente <strong>Flexbox</strong>, maqueta el contenedor <code>.products-grid</code> para que sus hijos (<code>.product-card</code>) se muestren en una <strong>fila horizontal</strong>.<br>
+            - Deben distribuirse con <strong>espacio uniforme</strong> entre ellos (usa <code>justify-content</code> o <code>gap</code>).<br>
+            - Todas las tarjetas deben tener la <strong>misma altura</strong> (usa <code>align-items</code>).<br>
+            - Si la pantalla se reduce, deben <strong>envolverse</strong> (wrap) y centrarse.<br>
+            - No modifiques las propiedades de ancho fijo de las tarjetas (ya tienen un ancho implícito por su contenido; tú controlas la distribución con Flexbox).
+        </div>
+    </body>
+</html>
