@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c0c0c0;
+        }
+
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        @media (min-width: 600px) {
+            body {
+                background-color: pink;
+            }
+
+            header {
+                background-color: green;
+            }
+        }
+        @media (min-width: 620px) {
+            header {
+                text-align: left;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 1000px) {
+            header {
+                background-color: purple;
+            }
+        }
+        @media (orientation: portrait) {
+            body {
+                font-family: georgia;
+            }
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <header>
+
+        <h1>Media Queries</h1>
+
+    </header>
+
+
+
+</body>
+</html>
