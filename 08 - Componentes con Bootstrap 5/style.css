@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+    #hero-mountains-img {
+        margin-top: -15rem;
+        z-index: -1;
+    }
+}
+.hero-primary-bg {
+    background-color: #0d6efd;
+}
+
+.hero-muted-bg {
+    background-color: #f8f9fa;
+}
+
+.hero-dark-bg {
+    background-color: #212529;
+}
+
+.hero-warning-bg {
+    background-color: #ffc107;
+}
+
+.hero-forest-bg {
+    background-image: url("img/bosque.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
