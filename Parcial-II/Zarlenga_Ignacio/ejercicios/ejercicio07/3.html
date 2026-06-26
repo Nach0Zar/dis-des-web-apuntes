@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap 5 - Primeros pasos</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="bg-light p-3 mb-4">
+            <h1 class="text-center text-primary">Ejercicio 3: Grilla y clases auxiliares</h1>
+        </header>
+        <main class="container text-center exercise-3">
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="container-green-600 container-center text-white p-3">
+                        <h2>header</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-1">
+                <div class="col-6 col-sm-3 col-md-3 offset-md-3">
+                    <div class="container-gray-400 container-center p-3">
+                        <h2>1</h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-3">
+                    <div class="container-gray-400 container-center p-3">
+                        <h2>2</h2>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-md-block"></div>
+                <div class="col-6 col-sm-3 col-md-3">
+                    <div class="container-gray-400 container-center p-3">
+                        <h2>3</h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-3 offset-md-6">
+                    <div class="container-gray-400 container-center p-3">
+                        <h2>4</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-1 d-none d-sm-flex d-md-none">
+                <div class="col-12">
+                    <div class="container-cyan-400 container-center p-3">
+                        <p>tablet</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-1">
+                <div class="col-6 col-sm-3 order-md-4">
+                    <div class="container-orange-400 container-center p-3">
+                        <h2>a</h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 order-md-3">
+                    <div class="container-orange-400 container-center p-3">
+                        <h2>b</h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 order-md-2">
+                    <div class="container-orange-400 container-center p-3">
+                        <h2>c</h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 order-md-1">
+                    <div class="container-orange-400 container-center p-3">
+                        <h2>d</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-1 d-sm-none">
+                <div class="col-12">
+                    <div class="container-cyan-400 container-center p-3">
+                        <p>mobile</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-1 d-none d-md-flex">
+                <div class="col-12">
+                    <div class="container-cyan-400 container-center p-3">
+                        <p>desktop</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-1">
+                <div class="col-12 col-sm-6 col-md-3 order-sm-2 order-md-2">
+                    <div class="container-red-300 container-center p-3">
+                        <h2>:D</h2>
+                    </div>
+                </div>
+                <div class="d-none d-sm-block col-sm-6 col-md-3 offset-md-3 order-sm-1 order-md-1">
+                    <div class="container-red-300 container-center p-3">
+                        <h2>:(</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-1 d-none d-sm-flex">
+                <div class="col-12">
+                    <div class="container-green-600 container-center text-white p-3">
+                        <p>footer</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f4f6fa;
+    padding: 2rem;
+}
+
+.product-page {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    overflow: hidden;
+    padding: 2rem;
+}
+
+/* Sección superior: miniaturas + imagen principal + panel info */
+.thumbnails {
+    display: flex; /* solo para alinear miniaturas internamente, pero no define el layout principal de columnas (el alumno debe resolver la fila de 3 secciones) */
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.thumb {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.main-image {
+    background: #f0f2f5;
+    border-radius: 24px;
+    padding: 1rem;
+    text-align: center;
+}
+.main-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+.info-panel {
+    background: #f9fafc;
+    border-radius: 24px;
+    padding: 1.5rem;
+}
+.product-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e6f5c;
+    margin: 1rem 0;
+}
+.sizes {
+    display: inline-flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+.size {
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+}
+.btn-buy {
+    background: #1e6f5c;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Pestañas simuladas */
+.tabs {
+    margin-top: 3rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1.5rem;
+}
+.tab-buttons {
+    display: flex; /* solo para alinear pestañas internamente, pero el layout general de la página lo define el alumno */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.tab {
+    background: #eef2ff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+}
+.tab-content {
+    background: #fafcff;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+/* Productos relacionados */
+.related-title {
+    margin: 2rem 0 1rem 0;
+}
+.related-item {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #edf2f7;
+}
+.related-img {
+    width: 100%;
+    border-radius: 16px;
+}
+/* ===== AGREGAR FLEXBOX AQUÍ ===== */
+
+.product-top {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.thumbnails {
+    flex-basis: 100px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-image {
+    flex: 2;
+}
+
+.info-panel {
+    flex: 1.2;
+}
+
+.related-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.related-item {
+    flex-basis: 200px;
+}

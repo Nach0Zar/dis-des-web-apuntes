@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #eef2f5;
+    padding: 2rem;
+}
+
+.dashboard {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* Cabecera */
+.dash-header {
+    background: #0b2b40;
+    color: white;
+    padding: 1.2rem 2rem;
+}
+.dash-header h2 {
+    font-weight: 500;
+}
+.dash-header p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Tarjetas KPI */
+.kpi-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+.kpi-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0f4c5f;
+}
+.kpi-label {
+    color: #5b6e8c;
+    margin-top: 0.5rem;
+}
+
+/* Sección central */
+.chart-placeholder {
+    background: #f1f5f9;
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px dashed #94a3b8;
+    font-weight: 500;
+}
+
+.activities-list {
+    background: #f9fafc;
+    border-radius: 24px;
+    padding: 1rem;
+}
+.activity-item {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 16px;
+    display: flex; /* pequeño detalle interno, pero NO define el layout general de columnas */
+    justify-content: space-between;
+    border-left: 4px solid #2c7da0;
+}
+
+/* Footer */
+.footer {
+    background: #f1f5f9;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.8rem;
+    color: #475569;
+}
+
+/* ===== AGREGAR FLEXBOX AQUÍ ===== */
+.kpi-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.kpi-row .kpi-card {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.dashboard-content {
+    display: flex;
+}
+
+.chart-placeholder {
+    flex-grow: 2;
+}

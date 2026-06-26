@@ -1,0 +1,141 @@
+
+/* ========== ESTILOS BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+    background: #f0f2f5;
+    padding: 2rem;
+}
+
+/* Contenedor principal del perfil */
+.profile-app {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Cabecera */
+.header {
+    background: linear-gradient(135deg, #1e3c72, #2b4c7c);
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+/* Sidebar (menú vertical) */
+.sidebar {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-right: 1px solid #e0e0e0;
+}
+
+.menu-item {
+    display: block;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: 500;
+    transition: 0.2s;
+    border: 1px solid #e9ecef;
+}
+
+.menu-item:hover {
+    background: #e9ecef;
+}
+
+/* Área de perfil */
+.profile-main {
+    padding: 2rem;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.user-name {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.user-bio {
+    color: #5a6e7a;
+    margin-bottom: 1rem;
+}
+
+.stats {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 16px;
+    display: inline-flex;
+    gap: 1rem; /* esto es un detalle menor, no afecta el layout principal que debe resolver el alumno */
+    margin-bottom: 2rem;
+}
+.stat {
+    text-align: center;
+    padding: 0 1rem;
+}
+.stat-number {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.publicaciones h3 {
+    margin-bottom: 1rem;
+}
+.post {
+    background: #f9f9ff;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2c7da0;
+}
+
+/* ===== AGREGAR FLEXBOX AQUÍ ===== */
+/* Pista: cabecera necesita flex para logo y menú, el contenido principal necesita dos columnas (sidebar + perfil) */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-layout {
+    display: flex;
+    flex-wrap: wrap; /* para que en pantallas pequeñas el sidebar y el perfil se apilen y se mantengan los 240px fijos*/
+}
+
+#main-layout .sidebar {
+    flex-basis: 240px;
+}
+
+#main-layout .profile-main {
+    flex-grow: 1;
+}

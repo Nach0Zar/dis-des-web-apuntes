@@ -1,0 +1,77 @@
+:root {
+    --cyan-400: #3dd5f3;
+    --green-200: #a3cfbb;
+    --green-600: #146c43;
+    --red-300: #ea868f;
+    --blue-300: #6ea8fe;
+    --gray-400: #ced4da;
+    --orange-400: #feb272;
+    --pink-200: #f0b6cf;
+    --yellow-400: #ffda6a;
+}
+
+.container-red-300 {
+    background-color: var(--red-300);
+}
+
+.container-cyan-400 {
+    background-color: var(--cyan-400);
+}
+
+.container-green-200 {
+    background-color: var(--green-200);
+}
+
+.container-green-600 {
+    background-color: var(--green-600);
+}
+
+.container-blue-300 {
+    background-color: var(--blue-300);
+}
+
+.container-blue-300 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-center p {
+    margin: 0;
+}
+
+
+.container-gray-400 {
+    background-color: var(--gray-400);
+}
+
+.container-orange-400 {
+    background-color: var(--orange-400);
+}
+
+.container-pink-200 {
+    background-color: var(--pink-200);
+}
+
+.container-yellow-400 {
+    background-color: var(--yellow-400);
+}
+
+.exercise-4-header {
+    min-height: 4rem;
+}
+
+.exercise-4-number {
+    min-height: 5rem;
+}
+
+.exercise-4-footer {
+    min-height: 3rem;
+}
